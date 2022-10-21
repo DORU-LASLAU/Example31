@@ -7,13 +7,16 @@ public class Example31 {
         n = inputValue.nextInt();
         for (i = 1; i <= n; i++) {
             for (j = 1; j <= n - i; j++) {
-                System.out.printf("  ");
+                System.out.printf(" /");
             }
             for (j = i; j > 0; j--) {
                 System.out.printf(" %d", j);
             }
             for (j = 2; j <= i; j++) {
                 System.out.printf(" %d", j);
+            }
+            for (j = 1; j <= n-i ; j++) {
+                System.out.printf(" /");
             }
             System.out.println();
         }
